@@ -1,0 +1,163 @@
+          <button id="doorSwitch1" class="btn btn-small btn-primary">46 Deg</button>&nbsp&nbsp&nbsp
+          <button id="doorSwitch6" class="btn btn-small btn-primary">56 Deg</button><br><br>
+          <button id="doorSwitch2" class="btn btn-small btn-primary">48 Deg</button>&nbsp&nbsp&nbsp
+          <button id="doorSwitch7" class="btn btn-small btn-primary">58 Deg</button><br><br>
+          <button id="doorSwitch3" class="btn btn-small btn-primary">50 Deg</button>&nbsp&nbsp&nbsp
+          <button id="doorSwitch8" class="btn btn-small btn-primary">60 Deg</button><br><br>
+          <button id="doorSwitch4" class="btn btn-small btn-primary">52 Deg</button>&nbsp&nbsp&nbsp
+          <button id="doorSwitch9" class="btn btn-small btn-primary">62 Deg</button><br><br>
+          <button id="doorSwitch5" class="btn btn-small btn-primary">54 Deg</button>&nbsp&nbsp&nbsp
+          <button id="doorSwitchA" class="btn btn-small btn-primary">64 Deg</button><br><br>
+          <button id="doorSwitchB" class="btn btn-small btn-primary">Fan On</button>&nbsp&nbsp&nbsp
+          <button id="doorSwitchC" class="btn btn-small btn-primary">Fan Off</button><br><br>
+          <button id="doorSwitchD" class="btn btn-small btn-primary">&nbspUnload&nbsp<br>Bottle</button>&nbsp&nbsp&nbsp
+          <button id="doorSwitchE" class="btn btn-small btn-primary">Load<br>&nbspBottle&nbsp</button>
+        </div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.confirmon.js"></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+        // This is the init function
+        // Runs when the page has completed loading
+
+        $('#controlPanel').show();
+        $('#doorSwitch1').css({"background-image":"linear-gradient(to bottom, #6400b4, #420072)"});
+        $('#doorSwitch1').css({"background-color":"#6400b4"});
+        $('#doorSwitch6').css({"background-image":"linear-gradient(to bottom, #888800, #ffff00)"});
+        $('#doorSwitch6').css({"background-color":"#ffff00"});
+        $('#doorSwitch2').css({"background-image":"linear-gradient(to bottom, #6400b4, #420072)"});
+        $('#doorSwitch2').css({"background-color":"#6400b4"});
+        $('#doorSwitch7').css({"background-image":"linear-gradient(to bottom, #888800, #ff8800)"});
+        $('#doorSwitch7').css({"background-color":"#ff8800"});
+        $('#doorSwitch3').css({"background-image":"linear-gradient(to bottom, #000088, #0000ff)"});
+        $('#doorSwitch3').css({"background-color":"#0000ff"});
+        $('#doorSwitch8').css({"background-image":"linear-gradient(to bottom, #888800, #ff8800)"});
+        $('#doorSwitch8').css({"background-color":"#ff8800"});
+        $('#doorSwitch4').css({"background-image":"linear-gradient(to bottom, #000088, #0000ff)"});
+        $('#doorSwitch4').css({"background-color":"#0000ff"});
+        $('#doorSwitch9').css({"background-image":"linear-gradient(to bottom, #880000, #ff0000)"});
+        $('#doorSwitch9').css({"background-color":"#ff0000"});
+        $('#doorSwitch5').css({"background-image":"linear-gradient(to bottom, #888800, #ffff00)"});
+        $('#doorSwitch5').css({"background-color":"#ffff00"});
+        $('#doorSwitchA').css({"background-image":"linear-gradient(to bottom, #880000, #ff0000)"});
+        $('#doorSwitchA').css({"background-color":"#ff0000"});
+        $('#doorSwitchB').css({"background-image":"linear-gradient(to bottom, #880000, #ff0000)"});
+        $('#doorSwitchB').css({"background-color":"#ff0000"});
+        $('#doorSwitchC').css({"background-image":"linear-gradient(to bottom, #880000, #ff0000)"});
+        $('#doorSwitchC').css({"background-color":"#ff0000"});
+        $('#doorSwitchD').css({"background-image":"linear-gradient(to bottom, #880000, #ff0000)"});
+        $('#doorSwitchD').css({"background-color":"#ff0000"});
+        $('#doorSwitchE').css({"background-image":"linear-gradient(to bottom, #008800, #00ff00)"});
+        $('#doorSwitchE').css({"background-color":"#00ff00"});
+
+        $('#doorSwitch1').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=46",
+                });
+                }
+        });
+
+        $('#doorSwitch2').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=48",
+                });
+                }
+        });
+        $('#doorSwitch3').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=50",
+                });
+                }
+        });
+        $('#doorSwitch4').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=52",
+                });
+                }
+        });
+        $('#doorSwitch5').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=54",
+                });
+                }
+        });
+        $('#doorSwitch6').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=56",
+                });
+                }
+        });
+        $('#doorSwitch7').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=58",
+                });
+                }
+        });
+        $('#doorSwitch8').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=60",
+                });
+                }
+        });
+        $('#doorSwitch9').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=62",
+                });
+                }
+        });
+        $('#doorSwitchA').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=64",
+                });
+                }
+        });
+        $('#doorSwitchB').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=98",
+                });
+                }
+        });
+        $('#doorSwitchC').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=99",
+                });
+                }
+        });
+        $('#doorSwitchD').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=96",
+                });
+                }
+        });
+        $('#doorSwitchE').confirmOn('click', function(e, confirmed) {
+                if(confirmed) {
+                $.ajax({
+                        url: "temp.php?temp=97",
+                });
+                }
+        });
+    });
+    </script>
+
+  </body>
+</html>
