@@ -1,0 +1,15 @@
+Here is a list of what is needed installed on the Raspberry Pi Zero.
+
+I used Arch Linux.  All of these packages are available in Raspbian, etc.  I am only including in this list what I think would not be contained in a normal release of the distro.
+
+Apache
+Developer Utils
+I2C tools
+Python
+PHP
+
+I'm sure there are dependencies to these. Basically, you will need full capabilites to develop and run Python code, PHP (including Apache) and WIFI.  You need to know how to do such things as configure sudo, php basedirs, etc.  What I have done here doesn't stray too far from the norm on these things, but it is constantly evolving, and if you take this on, you'll probably want some problem solving skills and your favorite search engine to get things working.
+
+I bought the Raspberry Pi Zero Budget Pack, case, and ADS1115 ADC from Adafruit.  You will also need a USB WIFI adapter.
+
+Read through how to install I2C on your linux distro in order to get the ADS1115 working.  You will also need to configure the WIFI.  There are plenty of how-to's on doing that.  Hint, I also found configuring for "USB Gadget Mode" helpful until I got the WIFI up.  I did most of my work on a Raspberry Pi B+ and then moved the SD Card over to the Zero.  It was a seamless transition, and was easier than messing around with the USB On-the-go cable (which I didnt have at the time).  I started this project on the B+ and then ordered the rest of the gear from Adafruit once I had a proof of concept.
