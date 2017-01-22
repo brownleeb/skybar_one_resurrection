@@ -1,0 +1,5 @@
+A note about security.
+
+This device is network enabled, but intended to be run on a well secured network.  I block its ability to reach the internet with a firewall.  There are some suspect uses of sudo, etc, and I have made my own determination of what I will accept on my internal network.  
+
+Do not configure this device in a DMZ or make it otherwise accessible to/from the internet.  If you did, I wouldn't be surprised to see someone empty the contents of your wine bottle onto your counter at sometime during the night.  You should DEFINITELY ensure that your web server is secure and only accessible from the local network.
