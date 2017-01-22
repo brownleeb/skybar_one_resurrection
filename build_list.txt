@@ -21,3 +21,5 @@ Hint:
  - open_basedir = /srv/http/:/usr/local/bin/:/run (in /etc/php/php.ini on arch linux)
  - Cmnd_Alias WINE = /usr/bin/python switch.py *, /usr/local/bin/current_temp.py, /usr/local/bin/gpio *, /usr/local/bin/dump.sh, /usr/local/bin/vacuum.py (in /etc/sudoers)
  - http ALL=(ALL) NOPASSWD:WINE (in /etc/sudoers)
+
+change 1
