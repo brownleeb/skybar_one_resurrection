@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Wine Temp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/jquery.confirmon.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="Raspi-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="Raspi-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="Raspi-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="Raspi-57.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="container" align="center">
+
+        <!-- <h1>Garage Door Control</h1>  -->
+        <div id="controlPanel" style="display:none;">
