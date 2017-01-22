@@ -1,0 +1,19 @@
+Here are the 'pinouts' on the ribbon cable
+
+1 (red) - Ground
+2 (gray/black) - Air Relay 4 (furthest right on bracket)
+3 (gray/black) - Air Relay 3
+4 (gray/black) - ThermoElectric Cooler (Peltier Device)
+5 (gray/black) - Fans
+6 (gray/black) - NTC Thermistor Positive Supply Voltage
+7 (gray/black) - NTC Thermistor Ground
+8 (gray/black) - NTC Thermistor voltage out
+9 (gray/black) - Air Relay 1 (furthest to left on bracket)
+10 (gray/black) - Air Relay 2
+11 (gray/black) - Air Pump
+
+What I found that was applying very little power to each wire would enable the attached device.  Some documentation read said RPi GPIOs can source up to 8ma default, or 16ma if configured.  Total should be no more than 50ma.  I was actually able to turn on all GPIOs at once without any problems.  It seems to be functioning at the 3.3v level just fine.
+
+There is one other header, the vacuum sensor, that just has the standard red/black/blue wires, and gave me usable analog values (on the blue wire) from a 3.3v input on the red wire and the black wire grounded.
+
+Thats all you need to know to enable anything.  Now its just figuring out some logic.
