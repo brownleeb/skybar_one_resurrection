@@ -13,3 +13,8 @@ I'm sure there are dependencies to these. Basically, you will need full capabili
 I bought the Raspberry Pi Zero Budget Pack, case, and ADS1115 ADC from Adafruit.  You will also need a USB WIFI adapter.
 
 Read through how to install I2C on your linux distro in order to get the ADS1115 working.  You will also need to configure the WIFI.  There are plenty of how-to's on doing that.  Hint, I also found configuring for "USB Gadget Mode" helpful until I got the WIFI up.  I did most of my work on a Raspberry Pi B+ and then moved the SD Card over to the Zero.  It was a seamless transition, and was easier than messing around with the USB On-the-go cable (which I didnt have at the time).  I started this project on the B+ and then ordered the rest of the gear from Adafruit once I had a proof of concept.
+
+Hint:
+ - open_basedir = /srv/http/:/usr/local/bin/:/run (in /etc/php/php.ini on arch linux)
+ - Cmnd_Alias WINE = /usr/bin/python switch.py *, /usr/local/bin/current_temp.py, /usr/local/bin/gpio *, /usr/local/bin/dump.sh, /usr/local/bin/vacuum.py (in /etc/sudoers)
+ - http ALL=(ALL) NOPASSWD:WINE (in /etc/sudoers)
