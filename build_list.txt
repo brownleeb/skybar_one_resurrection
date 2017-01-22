@@ -7,6 +7,9 @@ Developer Utils
 I2C tools
 Python
 PHP
+Adafruit_Python_ADS1x15 (from Adafruit.com)
+RPi.GPIO (Python/GPIO interface from https://pypi.python.org/pypi/RPi.GPIO)
+wiringPi (from wiringpi.com)
 
 I'm sure there are dependencies to these. Basically, you will need full capabilites to develop and run Python code, PHP (including Apache) and WIFI.  You need to know how to do such things as configure sudo, php basedirs, etc.  What I have done here doesn't stray too far from the norm on these things, but it is constantly evolving, and if you take this on, you'll probably want some problem solving skills and your favorite search engine to get things working.
 
