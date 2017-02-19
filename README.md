@@ -11,7 +11,7 @@ When the second failed, I decided to go back to the first and figure out what ev
   - There are two IC boards.  One is relatively easy to get at, is the 'Control Board'.  The second I couldn't get at and is called the 'UI Board'
   - Obviously, there is a ThermoElectric Cooler (Peltier device)
   - There are two fans, one outside to cool the heat sink, another inside to keep constant temperatures
-  - There is a air pump which also has a vacuum side
+  - There is an air pump which also has a vacuum side
   - There are 4 solenoid controlled air valves
   - There is a temperature sensor (NTC Thermistor) inside
   - There is a vacuum sensor near the control board
