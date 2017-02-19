@@ -43,4 +43,6 @@ GPIO.output(RELAY_1, False)
 time.sleep(4)
 GPIO.output(RELAY_3, False)
 GPIO.output(RELAY_4, False)
-call(["sudo /usr/local/bin/vacuum.py"])
+if (os.path.isfile('/srv/http/no_bottle')):
+   x=os.remove('/srv/http/no_bottle')
+call(["/usr/bin/sudo", "/usr/local/bin/vacuum.py"])
