@@ -39,9 +39,12 @@ if (($_GET["temp"]) == "99") {
    exit();  }
 if (($_GET["temp"]) == "96") {
    system("/usr/local/bin/dump.sh");
+   touch ("/srv/http/no_bottle");
    exit();  }
 if (($_GET["temp"]) == "97") {
    system("sudo /usr/local/bin/vacuum.py");
+   if (file_exists("/srv/http/no_bottle")) {
+      unlink("/srv/http/no_bottle");  }
    exit();  }
 $mfile=fopen("set_pt","w");
 fwrite($mfile,$setpt);
