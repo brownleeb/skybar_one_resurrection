@@ -3,7 +3,8 @@
 while :
 do
    vac=$(cat /run/vac)
-   if [ $vac -gt 7200 ]
+   empty="/srv/http/no_bottle"
+   if [ $vac -gt 7200 -a ! -f $empty ]
    then
       /usr/local/bin/vacuum.py
    fi
